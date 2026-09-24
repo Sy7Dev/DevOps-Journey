@@ -48,6 +48,9 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 cat readme
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 01 ➔ 02: Handling Special Filenames</b></summary>
 
@@ -59,6 +62,9 @@ Read the password stored in a file named `-` located in the home directory.
 cat ./-
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 02 ➔ 03: Spaces in Filenames</b></summary>
 
@@ -72,6 +78,9 @@ cat "spaces in this filename"
 cat spaces\ in\ this\ filename
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 03 ➔ 04: Hidden Files</b></summary>
 
@@ -85,6 +94,9 @@ ls -la
 cat .hidden
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 04 ➔ 05: Human-Readable File Identification</b></summary>
 
@@ -99,6 +111,9 @@ cat ./-file07
 ```
 ---
 
+
+</details>
+
 <details>
 <summary><b>Bandit Level 05 ➔ 06: Advanced Directory Search Filters</b></summary>
 
@@ -111,6 +126,9 @@ cd inhere
 find . -type f -size 1033c ! -executable
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 06 ➔ 07: System-Wide Search Filters</b></summary>
 
@@ -123,6 +141,9 @@ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 cat /var/lib/dpkg/info/bandit7.password
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 07 ➔ 08: Pattern Matching in Large Files</b></summary>
 
@@ -134,6 +155,9 @@ Extract the password located next to the word "millionth" inside `data.txt`.
 grep "millionth" data.txt
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 08 ➔ 09: Unique Line Extraction</b></summary>
 
@@ -145,6 +169,9 @@ Find the only line of text that occurs exactly once inside `data.txt`.
 sort data.txt | uniq -u
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 09 ➔ 10: Human-Readable Strings in Binaries</b></summary>
 
@@ -157,6 +184,9 @@ strings data.txt | grep "=="
 ```
 ---
 
+
+</details>
+
 <details>
 <summary><b>Bandit Level 10 ➔ 11: Base64 Payload Processing</b></summary>
 
@@ -168,6 +198,9 @@ Decode base64-encoded string data contained within `data.txt` to retrieve cleart
 base64 -d data.txt
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 11 ➔ 12: Cipher Translation (ROT13)</b></summary>
 
@@ -179,6 +212,9 @@ Decode a text string in `data.txt` that has been rotated by 13 positions (ROT13)
 cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 12 ➔ 13: Nested Archive Extraction</b></summary>
 
@@ -194,6 +230,9 @@ file data.bin
 # Decompress sequentially based on file type output
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 13 ➔ 14: SSH Key Authentication</b></summary>
 
@@ -206,6 +245,9 @@ ssh -i sshkey.private bandit14@localhost -p 2220
 cat /etc/bandit_pass/bandit14
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 14 ➔ 15: Local Port Submission</b></summary>
 
@@ -219,6 +261,9 @@ nc localhost 30000
 ```
 ---
 
+
+</details>
+
 <details>
 <summary><b>Bandit Level 15 ➔ 16: Encrypted TLS/SSL Sockets</b></summary>
 
@@ -230,6 +275,9 @@ Transmit the current password to port `30001` on `localhost` over an active SSL/
 openssl s_client -connect localhost:30001 -ign_eof
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 16 ➔ 17: Port Scanning & RSA Key Retrieval</b></summary>
 
@@ -243,6 +291,9 @@ openssl s_client -connect localhost:31790 -ign_eof
 # Paste Level 16 password to receive the private key
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 17 ➔ 18: File Comparison (Diffing)</b></summary>
 
@@ -254,6 +305,9 @@ Compare `passwords.old` and `passwords.new` to find the single line that changed
 diff passwords.old passwords.new
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 18 ➔ 19: Bypassing Shell Escape Restrictions</b></summary>
 
@@ -265,6 +319,9 @@ Log in via SSH when `.bashrc` automatically disconnects standard interactive she
 ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"
 ```
 ---
+
+</details>
+
 <details>
 <summary><b>Bandit Level 19 ➔ 20: Basic SetUID Execution</b></summary>
 
@@ -276,6 +333,9 @@ Use a SetUID binary (`bandit20-do`) to read `/etc/bandit_pass/bandit20`.
 ./bandit20-do cat /etc/bandit_pass/bandit20
 ```
 ---
+
+
+</details>
 
 <details>
 <summary><b>Bandit Level 20 ➔ 21: Local IPC & SetUID Privilege Escalation</b></summary>
@@ -289,3 +349,5 @@ echo "4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA" | nc -l -p 53923 &
 ./suconnect 53923
 ```
 ---
+
+</details>
