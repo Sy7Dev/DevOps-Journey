@@ -47,6 +47,7 @@ Establish an SSH connection to a remote server using a non-standard port (`2220`
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 cat readme
 ```
+---
 
 <details>
 <summary><b>Bandit Level 05 ➔ 06: Advanced Directory Search Filters</b></summary>
@@ -59,6 +60,7 @@ Locate a specific file nested within multiple subdirectories matching exact crit
 cd inhere
 find . -type f -size 1033c ! -executable
 ```
+---
 
 <details>
 <summary><b>Bandit Level 10 ➔ 11: Base64 Payload Processing</b></summary>
@@ -70,6 +72,8 @@ Decode base64-encoded string data contained within `data.txt` to retrieve cleart
 ```bash
 base64 -d data.txt
 ```
+---
+
 <details>
 <summary><b>Bandit Level 15 ➔ 16: Encrypted TLS/SSL Sockets</b></summary>
 
@@ -80,6 +84,8 @@ Transmit the current password to port `30001` on `localhost` over an active SSL/
 ```bash
 openssl s_client -connect localhost:30001 -ign_eof
 ```
+---
+
 <details>
 <summary><b>Bandit Level 20 ➔ 21: Local IPC & SetUID Privilege Escalation</b></summary>
 
@@ -91,3 +97,4 @@ Spawn an active local TCP listener to pass credentials to a SetUID binary (`suco
 echo "4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA" | nc -l -p 53923 &
 ./suconnect 53923
 ```
+---
