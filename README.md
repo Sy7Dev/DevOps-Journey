@@ -67,3 +67,15 @@ Keep your repository organized with this recommended folder layout:
 ├── 07-terraform/
 ├── 08-cicd/
 └── 09-kubernetes/
+```
+---
+
+## 📬 Connect With Me
+
+<div align="center">
+
+  <a href="https://www.linkedin.com/in/a-suhayb/" target="_blank">
+    <img src="https://img.shields.io/badge/Connect%20With%20Me-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+
+</div>
