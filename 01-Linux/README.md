@@ -1,7 +1,7 @@
 # 🐧 Module 01: Linux Basics & Administration
 
 > **Status:** ✅ Completed   
-> **Main Challenge:** OverTheWire Bandit (Levels 0 ➔ 20)  
+> **Main Challenge:** OverTheWire Bandit (Levels 0 ➔ 20) ✅ Completed 
 
 ---
 
