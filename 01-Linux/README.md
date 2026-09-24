@@ -34,7 +34,7 @@ pwd         # Output current directory
 
 ---
 
-## 🎮 OverTheWire Bandit: Hands-On Milestone Solutions
+## 🎮 OverTheWire Bandit: Hands-On Solutions
 
 <details>
 <summary><b>Bandit Level 00 ➔ 01: Remote Access & SSH Authentication</b></summary>
@@ -46,6 +46,56 @@ Establish an SSH connection to a remote server using a non-standard port (`2220`
 ```bash
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 cat readme
+```
+---
+<details>
+<summary><b>Bandit Level 01 ➔ 02: Handling Special Filenames</b></summary>
+
+### 🎯 Objective
+Read the password stored in a file named `-` located in the home directory.
+
+### 🛠️ Commands
+```bash
+cat ./-
+```
+---
+<details>
+<summary><b>Bandit Level 02 ➔ 03: Spaces in Filenames</b></summary>
+
+### 🎯 Objective
+Read the password stored in a file named `spaces in this filename` located in the home directory.
+
+### 🛠️ Commands
+```bash
+cat "spaces in this filename"
+# OR
+cat spaces\ in\ this\ filename
+```
+---
+<details>
+<summary><b>Bandit Level 03 ➔ 04: Hidden Files</b></summary>
+
+### 🎯 Objective
+Find the password stored in a hidden file inside the `inhere` directory.
+
+### 🛠️ Commands
+```bash
+cd inhere
+ls -la
+cat .hidden
+```
+---
+<details>
+<summary><b>Bandit Level 04 ➔ 05: Human-Readable File Identification</b></summary>
+
+### 🎯 Objective
+Identify the only human-readable ASCII file out of multiple binary files stored in the `inhere` directory.
+
+### 🛠️ Commands
+```bash
+cd inhere
+file ./*
+cat ./-file07
 ```
 ---
 
