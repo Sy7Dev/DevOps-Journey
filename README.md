@@ -12,15 +12,15 @@
 
 <hr />
 
-## 📌 Table of Contents
-- [🎯 Overview](#-overview)
-- [📊 Journey Tracker](#-journey-tracker)
-- [🛠 Repo Structure](#-repo-structure)
-- [📬 Connect With Me](#-connect-with-me)
+##  Table of Contents
+- [ Overview](#-overview)
+- [ Journey Tracker](#-journey-tracker)
+- [ Repo Structure](#-repo-structure)
+- [ Connect With Me](#-connect-with-me)
 
 ---
 
-## 🎯 Overview
+##Overview
 
 Welcome to my DevOps showcase repository! This repository acts as a central hub for my notes, practice scripts, architecture diagrams, and mini-projects completed during my **DevOps Journey**.
 
@@ -28,7 +28,7 @@ The goal of this repo is to maintain clean, reproducible documentation as I tran
 
 ---
 
-## 📊 Journey Tracker
+##  Journey Tracker
 
 | Module # | Module Name | Status | Main Topics Covered | Folder Link |
 | :---: | :--- | :---: | :--- | :---: |
@@ -46,7 +46,7 @@ The goal of this repo is to maintain clean, reproducible documentation as I tran
 
 
 
-## 🛠 Repo Structure
+##  Repo Structure
 
 Keep your repository organized with this recommended folder layout:
 
@@ -70,7 +70,7 @@ Keep your repository organized with this recommended folder layout:
 ```
 ---
 
-## 📬 Connect With Me
+##  Connect With Me
 
 <div align="center">
 
