@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1>🚀 DevOps Journey </h1>
+  <h1> DevOps Journey </h1>
   <p><i>Documenting my learning, hands-on labs, and real-world projects across 9 DevOps core modules.</i></p>
 
   <!-- Badges -->
